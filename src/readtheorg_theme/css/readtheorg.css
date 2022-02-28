@@ -1465,24 +1465,72 @@ h2.footnotes {
 }
 
 /* Custom block environments */
+
+#content .definition,
+#content .proof,
+#content .lemma,
+#content .theorem,
+#content .corollary,
 #content .satz {
   padding: 12px;
   line-height: 24px;
   margin-bottom: 24px;
-  background: #fdf3f2;
+  background: #e7f2fa;
 }
 
+#content .admonition-title.definition:before,
+#content .admonition-title.proof:before,
+#content .admonition-title.lemma:before,
+#content .admonition-title.theorem:before,
+#content .admonition-title.corollary:before,
 #content .admonition-title.satz:before {
   font-family: FontAwesome;
   content: " ";
 }
-#content .satz p:last-child {
-  margin-bottom: 0;
-}
 
+#content .admonition-title.proof,
+#content .admonition-title.lemma,
+#content .admonition-title.theorem,
+#content .admonition-title.corollary,
 #content .admonition-title.satz {
   line-height: 1;
+  background: #6ab0de;
+}
+
+#content .satz,
+#content .theorem {
+  background: #fdf3f2;
+}
+
+#content .admonition-title.satz,
+#content .admonition-title.theorem {
   background: #f29f97;
+}
+
+#content .proof {
+  background: #dcdcdc;
+}
+
+#content .admonition-title.proof {
+  background: #696969;
+}
+
+#content .definition {
+  background: #fffacd;
+}
+
+#content .admonition-title.definition {
+  background: yellow;
+  color: #404040;
+}
+
+#content .definition p:last-child,
+#content .proof p:last-child,
+#content .lemma p:last-child,
+#content .theorem p:last-child,
+#content .corollary p:last-child,
+#content .satz p:last-child {
+  margin-bottom: 0;
 }
 
 /* Getts overwritten otherwise? */
@@ -1492,17 +1540,7 @@ h2.footnotes {
   font-weight: bold;
   display: block;
   color: #fff;
-  /* background:#6ab0de; */
-  /* margin:-12px; */
   padding: 6px 12px;
   margin-bottom: 0px;
-}
-
-#content .admonition-title {
-  color: #fff;
-  font-weight: bold;
-  display: block;
-  color: #fff;
-  padding: 6px 12px;
-  margin-bottom: 0px;
+  text-transform: capitalize;
 }

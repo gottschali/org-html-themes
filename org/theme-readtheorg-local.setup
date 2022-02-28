@@ -2,6 +2,7 @@
 
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/htmlize.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="src/readtheorg_theme/css/readtheorg.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="src/fa/css/all.css"/>
 
 #+HTML_HEAD: <script type="text/javascript" src="src/lib/js/jquery.min.js"></script>
 #+HTML_HEAD: <script type="text/javascript" src="src/lib/js/bootstrap.min.js"></script>
